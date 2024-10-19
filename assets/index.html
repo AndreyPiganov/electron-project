@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблица пользователей</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Пользователи</h1>
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <th>Имя</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button id="addUserButton">Добавить пользователя</button>
+
+    <div id="userForm">
+      <h3>Добавить пользователя</h3>
+      <label for="name">Имя:</label>
+      <input type="text" id="name" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <br /><br />
+      <button id="submitUserButton">Добавить</button>
+    </div>
+
+    <script type="module" src="../dist/renderers/renderer.js"></script>
+    <script type="module" src="../dist/utils/isValidEmail.js"></script>
+  </body>
+</html>
